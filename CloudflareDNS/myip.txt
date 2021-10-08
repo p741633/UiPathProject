@@ -1,0 +1,11 @@
+
+Pinging p741633.freedynamicdns.org [58.8.137.168] with 32 bytes of data:
+Reply from 58.8.137.168: bytes=32 time=29ms TTL=56
+Reply from 58.8.137.168: bytes=32 time=9ms TTL=56
+Reply from 58.8.137.168: bytes=32 time=9ms TTL=56
+Reply from 58.8.137.168: bytes=32 time=9ms TTL=56
+
+Ping statistics for 58.8.137.168:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 9ms, Maximum = 29ms, Average = 14ms
