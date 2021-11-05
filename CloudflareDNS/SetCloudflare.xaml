@@ -113,7 +113,7 @@
         </OutArgument>
       </p:GetSecureCredential.Username>
     </p:GetSecureCredential>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open https://dash.cloudflare.com/login" sap:VirtualizedContainerService.HintSize="1143,3951" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://dash.cloudflare.com/login">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open https://dash.cloudflare.com/login" sap:VirtualizedContainerService.HintSize="1143,3951" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://dash.cloudflare.com/login">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -125,7 +125,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'Cloudflar Page'" sap:VirtualizedContainerService.HintSize="1067,3758" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="3c555261b7998b86a9866fc4bec9068a" Selector="&lt;html app='firefox.exe' title='Cloudflare - Web Performance &amp;amp; Security' /&gt;">
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'Cloudflare Page'" sap:VirtualizedContainerService.HintSize="1067,3758" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="3c555261b7998b86a9866fc4bec9068a" Selector="&lt;html app='firefox.exe' title='Cloudflare - Web Performance &amp;amp; Security' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -139,7 +139,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="False" sap:VirtualizedContainerService.HintSize="991,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="True">
                       <ui:TypeInto.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6ee190e6-e7a2-47a1-baed-7e0252f66d1e" InformativeScreenshot="57fea220e9fbec8f782b3b99f2414a6f" Selector="&lt;webctrl tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6ee190e6-e7a2-47a1-baed-7e0252f66d1e" InformativeScreenshot="82283d4ebaa3db06e35c24f22c1a5057" Selector="&lt;webctrl tag='INPUT' /&gt;" WaitForReady="COMPLETE">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -174,10 +174,10 @@
                     </Sequence>
                     <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="991,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
                       <ui:Click.CursorPosition>
-                        <ui:CursorPosition OffsetX="121" OffsetY="27" Position="TopLeft" />
+                        <ui:CursorPosition OffsetX="149" OffsetY="33" Position="TopLeft" />
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bb55026d-fb0c-4b5a-9f78-7125423626b4" InformativeScreenshot="5fa545eb693a45b6208d73e3ec9cf37f" Selector="&lt;webctrl tag='BUTTON' type='submit' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bb55026d-fb0c-4b5a-9f78-7125423626b4" InformativeScreenshot="6626d5958e5cbdf06fe8994db7a2242d" Selector="&lt;webctrl tag='BUTTON' type='submit' /&gt;" WaitForReady="COMPLETE">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -210,12 +210,12 @@
                     </ui:Click>
                     <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="991,2196" sap2010:WorkflowViewState.IdRef="Sequence_8">
                       <Sequence.Variables>
-                        <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable">
+                        <Variable x:TypeArguments="sd:DataTable" Name="v_ExtractDataTable">
                           <Variable.Default>
                             <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">new System.Data.DataTable();</mca:CSharpValue>
                           </Variable.Default>
                         </Variable>
-                        <Variable x:TypeArguments="x:Int32" Default="1" Name="DataTableIndex" />
+                        <Variable x:TypeArguments="x:Int32" Default="1" Name="v_DataTableIndex" />
                       </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -237,7 +237,7 @@
                               <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="873,106" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="0" SimulateClick="True">
                                 <ui:ExtractData.DataTable>
                                   <InOutArgument x:TypeArguments="sd:DataTable">
-                                    <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">ExtractDataTable</mca:CSharpReference>
+                                    <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">v_ExtractDataTable</mca:CSharpReference>
                                   </InOutArgument>
                                 </ui:ExtractData.DataTable>
                                 <ui:ExtractData.Target>
@@ -259,7 +259,7 @@
                                     <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" Delimitator="Comma" DisplayName="Write CSV" FilePath="DataTable.csv" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1">
                                       <ui:WriteCsvFile.DataTable>
                                         <InArgument x:TypeArguments="sd:DataTable">
-                                          <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">ExtractDataTable</mca:CSharpValue>
+                                          <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">v_ExtractDataTable</mca:CSharpValue>
                                         </InArgument>
                                       </ui:WriteCsvFile.DataTable>
                                     </ui:WriteCsvFile>
@@ -273,9 +273,6 @@
                                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                     </ActivityAction.Argument>
                                     <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="839,1239" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                                      <Sequence.Variables>
-                                        <Variable x:TypeArguments="x:String" Name="variable1" />
-                                      </Sequence.Variables>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -284,24 +281,24 @@
                                       <Assign sap:VirtualizedContainerService.HintSize="797,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Int32">
-                                            <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">DataTableIndex</mca:CSharpReference>
+                                            <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">v_DataTableIndex</mca:CSharpReference>
                                           </OutArgument>
                                         </Assign.To>
                                         <Assign.Value>
                                           <InArgument x:TypeArguments="x:Int32">
-                                            <mca:CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">DataTableIndex + 1</mca:CSharpValue>
+                                            <mca:CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">v_DataTableIndex + 1</mca:CSharpValue>
                                           </InArgument>
                                         </Assign.Value>
                                       </Assign>
                                       <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="797,61" sap2010:WorkflowViewState.IdRef="WriteLine_3">
                                         <InArgument x:TypeArguments="x:String">
-                                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">DataTableIndex.ToString()</mca:CSharpValue>
+                                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">v_DataTableIndex.ToString()</mca:CSharpValue>
                                         </InArgument>
                                       </WriteLine>
                                       <If sap:VirtualizedContainerService.HintSize="797,355" sap2010:WorkflowViewState.IdRef="If_1">
                                         <If.Condition>
                                           <InArgument x:TypeArguments="x:Boolean">
-                                            <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">DataTableIndex == 1</mca:CSharpValue>
+                                            <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">v_DataTableIndex == 1</mca:CSharpValue>
                                           </InArgument>
                                         </If.Condition>
                                         <If.Then>
@@ -340,7 +337,7 @@
                                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="26b6a469-ea79-4bd7-82d5-cc52206cd7f3" InformativeScreenshot="1d0df67917258314a8c1d66a3494af37" WaitForReady="COMPLETE">
                                                   <ui:Target.Selector>
                                                     <InArgument x:TypeArguments="x:String">
-                                                      <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">String.Format("&lt;webctrl aaname='Edit' parentid='single-spa-application:@cloudflare/monolith' tableRow='{0}' tag='SPAN' /&gt;", DataTableIndex)</mca:CSharpValue>
+                                                      <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">String.Format("&lt;webctrl aaname='Edit' parentid='single-spa-application:@cloudflare/monolith' tableRow='{0}' tag='SPAN' /&gt;", v_DataTableIndex)</mca:CSharpValue>
                                                     </InArgument>
                                                   </ui:Target.Selector>
                                                   <ui:Target.TimeoutMS>
@@ -399,7 +396,7 @@
                                 </ui:ForEachRow.Body>
                                 <ui:ForEachRow.DataTable>
                                   <InArgument x:TypeArguments="sd:DataTable">
-                                    <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">ExtractDataTable</mca:CSharpValue>
+                                    <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">v_ExtractDataTable</mca:CSharpValue>
                                   </InArgument>
                                 </ui:ForEachRow.DataTable>
                               </ui:ForEachRow>
