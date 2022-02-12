@@ -3,7 +3,7 @@
     <x:Property Name="Argument1" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1410,4227</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2024,4227</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -88,7 +88,6 @@
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
       <AssemblyReference>CredentialManagement</AssemblyReference>
       <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="SetCloudflare" sap:VirtualizedContainerService.HintSize="1185,4162" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -125,7 +124,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'Cloudflare Page'" sap:VirtualizedContainerService.HintSize="1067,3758" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="3c555261b7998b86a9866fc4bec9068a" Selector="&lt;html app='firefox.exe' title='Cloudflare - Web Performance &amp;amp; Security' /&gt;">
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'Cloudflare Page'" sap:VirtualizedContainerService.HintSize="1067,3758" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="3c555261b7998b86a9866fc4bec9068a" Selector="&lt;html app='firefox.exe' title='Cloudflare*' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -222,7 +221,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'DNSp74163 Page'" sap:VirtualizedContainerService.HintSize="949,2104" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="0f9f1b377f5d7b81594692c75d696a19" Selector="&lt;html app='firefox.exe' title='DNS | p741633.ga | Account | Cloudflare - Web Performance &amp;amp; Security' /&gt;">
+                      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'DNSp74163 Page'" sap:VirtualizedContainerService.HintSize="949,2104" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="0f9f1b377f5d7b81594692c75d696a19" Selector="&lt;html app='firefox.exe' title='DNS | *' /&gt;">
                         <ui:BrowserScope.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
