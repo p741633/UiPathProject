@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "CloudflareDNS",
   "description": "Update Cloudflare DNS",
   "main": "Main.xaml",
