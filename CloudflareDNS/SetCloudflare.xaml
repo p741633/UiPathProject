@@ -72,7 +72,6 @@
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
       <AssemblyReference>CredentialManagement</AssemblyReference>
       <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="SetCloudflare" sap:VirtualizedContainerService.HintSize="1227,3917" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -199,7 +198,11 @@
                             <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">new System.Data.DataTable();</mca:CSharpValue>
                           </Variable.Default>
                         </Variable>
-                        <Variable x:TypeArguments="x:Int32" Default="0" Name="v_DataTableIndex" />
+                        <Variable x:TypeArguments="x:Int32" Name="v_DataTableIndex">
+                          <Variable.Default>
+                            <Literal x:TypeArguments="x:Int32" />
+                          </Variable.Default>
+                        </Variable>
                       </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -368,7 +371,7 @@
                                             <ui:CursorPosition OffsetX="37" OffsetY="13" Position="TopLeft" />
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="134f6fed-e774-4cf7-a2af-d554533c3ddd" InformativeScreenshot="afa953a32fb506eaeb5dba544838fc1b" Selector="&lt;webctrl tag='BUTTON' type='submit' /&gt;" WaitForReady="COMPLETE">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="134f6fed-e774-4cf7-a2af-d554533c3ddd" InformativeScreenshot="afa953a32fb506eaeb5dba544838fc1b" Selector="&lt;webctrl parentid='*dns-edit-row' tag='BUTTON' type='submit' /&gt;" WaitForReady="COMPLETE">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
